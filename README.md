@@ -50,3 +50,7 @@ $ docker-compose up -d microservices-rabbitmq38
 $ docker-compose up -d microservices-mysql8
 $ docker-compose up -d microservices-postgres12
 ```
+
+### Execute REST API
+Inside this project you can find a Postman file to import into the client or use the given data to use any other client.
+You must firstly get a new token from oauth project which you have to set as Authorization bearer token.

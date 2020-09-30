@@ -1,0 +1,1011 @@
+{
+	"info": {
+		"_postman_id": "b63fce47-45b4-40e2-bb1e-4835f3caa335",
+		"name": "SpringBoot Project",
+		"description": "Microservices from Udemy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "items",
+			"item": [
+				{
+					"name": "http://localhost:8090/api/items/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/items",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8090/api/items/1/quantity/9",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqdWppdG8iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwibmFtZSI6Ikp1YW5pdG8iLCJleHAiOjE1OTU3MTI5MjMsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiMTU2NGZkNDktNWNmYi00ZmJjLTlkYWUtMTRhZjExYmQyNTJlIiwiZW1haWwiOiJqdWp1cnVqdUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJmcm9udEVuZEFwcCIsImxhc3RuYW1lIjoiUnVpeiJ9.L6Ho9hdWZSlJ99JxKtEHilj_zc0sA_4HTjgE3Oo0mf8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/items/6/quantity/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"items",
+								"6",
+								"quantity",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8090/api/items/config",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqdWppdG8iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwibmFtZSI6Ikp1YW5pdG8iLCJleHAiOjE1OTYwNjIwNTksImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiZjFjNDZhOTEtMmM4NS00MWI0LTk1NjgtOTgyMGI5YWE1YTNhIiwiZW1haWwiOiJqdWp1cnVqdUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJmcm9udEVuZEFwcCIsImxhc3RuYW1lIjoiUnVpeiJ9.4g60w-6bzlye34-lw1Zce2cpqbNhnq-k-doH2OHKK08",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/items/config",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"items",
+								"config"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8090/api/items/",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqdWppdG8iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwibmFtZSI6Ikp1YW5pdG8iLCJleHAiOjE1OTU3MTI5MjMsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiMTU2NGZkNDktNWNmYi00ZmJjLTlkYWUtMTRhZjExYmQyNTJlIiwiZW1haWwiOiJqdWp1cnVqdUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJmcm9udEVuZEFwcCIsImxhc3RuYW1lIjoiUnVpeiJ9.L6Ho9hdWZSlJ99JxKtEHilj_zc0sA_4HTjgE3Oo0mf8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"newOne\",\n\t\"price\": 25,\n\t\"createAt\": \"2020-07-23\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/items/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"items",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8005/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8005/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8005",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8005/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Mesa oficina\",\n\t\"price\": 555,\n\t\"createAt\": \"2020-03-01\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8005/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8005",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8090/api/items/7",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqdWppdG8iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwibmFtZSI6Ikp1YW5pdG8iLCJleHAiOjE1OTU3MTI5MjMsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiMTU2NGZkNDktNWNmYi00ZmJjLTlkYWUtMTRhZjExYmQyNTJlIiwiZW1haWwiOiJqdWp1cnVqdUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJmcm9udEVuZEFwcCIsImxhc3RuYW1lIjoiUnVpeiJ9.L6Ho9hdWZSlJ99JxKtEHilj_zc0sA_4HTjgE3Oo0mf8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/items/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"items",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8090/api/items/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqdWppdG8iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwibmFtZSI6Ikp1YW5pdG8iLCJleHAiOjE1OTU3MTI5MjMsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiMTU2NGZkNDktNWNmYi00ZmJjLTlkYWUtMTRhZjExYmQyNTJlIiwiZW1haWwiOiJqdWp1cnVqdUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJmcm9udEVuZEFwcCIsImxhc3RuYW1lIjoiUnVpeiJ9.L6Ho9hdWZSlJ99JxKtEHilj_zc0sA_4HTjgE3Oo0mf8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"jijiji\",\n\t\"price\": 700\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/items/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"items",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "config",
+			"item": [
+				{
+					"name": "http://localhost:8888/service-items/prod",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/service-items/prod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"service-items",
+								"prod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8888/service-items/default",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/service-items/default",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"service-items",
+								"default"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8888/service-items/dev",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/service-items/dev",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"service-items",
+								"dev"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8005/config",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8005/config",
+							"host": [
+								"localhost"
+							],
+							"port": "8005",
+							"path": [
+								"config"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8007/config",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8007/config",
+							"host": [
+								"localhost"
+							],
+							"port": "8007",
+							"path": [
+								"config"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8005/actuator/refresh",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8005/actuator/refresh",
+							"host": [
+								"localhost"
+							],
+							"port": "8005",
+							"path": [
+								"actuator",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8888/service-products/default",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/service-products/default",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"service-products",
+								"default"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8888/service-products/dev",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/service-products/dev",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"service-products",
+								"dev"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8888/service-users/dev",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/service-users/dev",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"service-users",
+								"dev"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "http://localhost:8090/api/products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqdWppdG8iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwibmFtZSI6Ikp1YW5pdG8iLCJleHAiOjE1OTU4OTY5MzksImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiMzUwMjA0NjMtZWE3OS00OGMzLTg3MmMtMWQzOTM2MmFkN2Y2IiwiZW1haWwiOiJqdWp1cnVqdUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJmcm9udEVuZEFwcCIsImxhc3RuYW1lIjoiUnVpeiJ9.5pOstW1cuKQKZvoMZoYCmRXhkqP_XNQ9z3sgePxs3bg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Sombrilla Xiaomi\",\n    \"price\": 5,\n    \"port\": 0,\n    \"createAt\": \"2020-07-27\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8090/api/products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqdWppdG8iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwibmFtZSI6Ikp1YW5pdG8iLCJleHAiOjE1OTU4OTY5MzksImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiMzUwMjA0NjMtZWE3OS00OGMzLTg3MmMtMWQzOTM2MmFkN2Y2IiwiZW1haWwiOiJqdWp1cnVqdUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJmcm9udEVuZEFwcCIsImxhc3RuYW1lIjoiUnVpeiJ9.5pOstW1cuKQKZvoMZoYCmRXhkqP_XNQ9z3sgePxs3bg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Sombrilla Xiaomi perdida en pandemia =(\",\n    \"price\": 5.5\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/products/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"products",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8090/api/products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqdWppdG8iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwibmFtZSI6Ikp1YW5pdG8iLCJleHAiOjE1OTU4OTY5MzksImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiMzUwMjA0NjMtZWE3OS00OGMzLTg3MmMtMWQzOTM2MmFkN2Y2IiwiZW1haWwiOiJqdWp1cnVqdUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJmcm9udEVuZEFwcCIsImxhc3RuYW1lIjoiUnVpeiJ9.5pOstW1cuKQKZvoMZoYCmRXhkqP_XNQ9z3sgePxs3bg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8090/api/products/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"products",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8090/api/products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8090/api/products/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqdWppdG8iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwibmFtZSI6Ikp1YW5pdG8iLCJleHAiOjE1OTU4OTY5MzksImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiMzUwMjA0NjMtZWE3OS00OGMzLTg3MmMtMWQzOTM2MmFkN2Y2IiwiZW1haWwiOiJqdWp1cnVqdUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJmcm9udEVuZEFwcCIsImxhc3RuYW1lIjoiUnVpeiJ9.5pOstW1cuKQKZvoMZoYCmRXhkqP_XNQ9z3sgePxs3bg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/products/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"products",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "eureka",
+			"item": [
+				{
+					"name": "http://localhost:8761/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8761/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8761",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "http://localhost:8090/api/security/oauth/token",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/users/usersDao",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"users",
+								"usersDao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8090/api/users/",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqdWppdG8iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwibmFtZSI6Ikp1YW5pdG8iLCJleHAiOjE1OTYwMDQxMzAsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiMGUxNGU2ZDQtYTdkOS00YmFhLWE1MmYtNjVkZjM5M2FhNDUxIiwiZW1haWwiOiJqdWp1cnVqdUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJmcm9udEVuZEFwcCIsImxhc3RuYW1lIjoiUnVpeiJ9.ELI6poamTRsI2X0kCinlrE2SWncZgzGm_rTtir93Ulw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"jujoPostgres\",\n  \"password\": \"$2a$10$.c2mbbahtWuTNWQlHd.VieJeHu3Pe3jrANgQqCjGM1jqu7a7uRjdK\",\n  \"enabled\": true,\n  \"name\": \"ay prro\",\n  \"lastname\": \"GGRR\",\n  \"email\": \"PostgresSQL@gmail.com\",\n  \"roles\": [\n    {\n      \"id\": 1,\n      \"name\": \"ROLE_USER\"\n    }\n  ],\n  \"loginAttempts\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/users/usersDao",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"users",
+								"usersDao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8090/api/users/users/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqdWppdG8iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwibmFtZSI6Ikp1YW5pdG8iLCJleHAiOjE1OTYwMDQxMzAsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiMGUxNGU2ZDQtYTdkOS00YmFhLWE1MmYtNjVkZjM5M2FhNDUxIiwiZW1haWwiOiJqdWp1cnVqdUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJmcm9udEVuZEFwcCIsImxhc3RuYW1lIjoiUnVpeiJ9.ELI6poamTRsI2X0kCinlrE2SWncZgzGm_rTtir93Ulw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"jijiji\",\n  \"password\": \"$2a$10$F3b95UDPnXs.XLZk58aU1.qpdrKKSO2Gl2voGg/QjX.Ihv4ymVJxu\",\n  \"enabled\": true,\n  \"name\": \"user chingon postgres!\",\n  \"lastname\": \"GR\",\n  \"email\": \"simonalamonapostgres@gmail.com\",\n  \"roles\": [\n    {\n      \"id\": 1,\n      \"name\": \"ROLE_USER\"\n    }\n  ],\n  \"loginAttempts\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/users/usersDao/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"users",
+								"usersDao",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8090/api/users/users/2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqdWppdG8iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwibmFtZSI6Ikp1YW5pdG8iLCJleHAiOjE1OTY2OTY5OTQsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiOWQ3MGVjYTctYzFiNS00MDNmLTgzYjgtZGM3NDYwMWI4ZDJmIiwiZW1haWwiOiJqdWp1cnVqdUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJmcm9udEVuZEFwcCIsImxhc3RuYW1lIjoiUnVpeiJ9.VHdEJycYch2NJNjw9A3BB4OXIsQ8IeoHAAO5H0FJZL8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/users/usersDao/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"users",
+								"usersDao",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8090/api/users/users/2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqdWppdG8iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwibmFtZSI6Ikp1YW5pdG8iLCJleHAiOjE1OTU2NjU3MDcsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiMjNmYmQzMWQtNmMxZC00MTc5LTk0OTgtYjE4NGE0ZTFlYzU2IiwiZW1haWwiOiJqdWp1cnVqdUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJmcm9udEVuZEFwcCIsImxhc3RuYW1lIjoiUnVpeiJ9.80pVE-Mtk8xgAee81M2wq3wxSf-qDavSCnUN2x8m6Y4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/users/usersDao/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"users",
+								"usersDao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8090/api/users/usersDao/search/findByUsername?username=jujo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqdWppdG8iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwibmFtZSI6Ikp1YW5pdG8iLCJleHAiOjE1OTYxNjYzNTAsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiMTlmNTg4ZTAtMGUwNC00NjY4LTgyNDktZWNmOTVkNjUwNDdiIiwiZW1haWwiOiJqdWp1cnVqdUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJmcm9udEVuZEFwcCIsImxhc3RuYW1lIjoiUnVpeiJ9.jjfVvbTizqiHPAgiXe4ORF98yvko4XVtH80Yv9KD3GE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/users/usersDao/search/findUser?username=jujo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"users",
+								"usersDao",
+								"search",
+								"findUser"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "jujo"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8090/api/users/usersDao/search/getUserByUsername?username=jujo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqdWppdG8iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwibmFtZSI6Ikp1YW5pdG8iLCJleHAiOjE1OTYxNjYzNTAsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiMTlmNTg4ZTAtMGUwNC00NjY4LTgyNDktZWNmOTVkNjUwNDdiIiwiZW1haWwiOiJqdWp1cnVqdUBnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJmcm9udEVuZEFwcCIsImxhc3RuYW1lIjoiUnVpeiJ9.jjfVvbTizqiHPAgiXe4ORF98yvko4XVtH80Yv9KD3GE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/users/usersDao/search/getUserByUsername?username=jujo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"users",
+								"usersDao",
+								"search",
+								"getUserByUsername"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "jujo"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "oauth",
+			"item": [
+				{
+					"name": "http://localhost:8090/api/security/oauth/token",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "frontEndApp",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "jujito",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/security/oauth/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"security",
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8090/api/security/oauth/token REFRESH TOKEN",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "frontEndApp",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "refresh_token",
+									"type": "text"
+								},
+								{
+									"key": "refresh_token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqdWpvIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImF0aSI6ImZkNjZkMmVmLWNmNjItNGRmNS1hMTdiLTg4MGFkNTFiOWRmMCIsIm5hbWUiOiJKSiIsImV4cCI6MTU5NTcxMzY3OSwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6IjJlOWVhNGJmLWY5ZWUtNGRhYS04Y2M5LTBlZjlmNWIzNDY0YiIsImVtYWlsIjoianVqb0BnbWFpbC5jb20iLCJjbGllbnRfaWQiOiJmcm9udEVuZEFwcCIsImxhc3RuYW1lIjoiR2xleiJ9.x1dG7iKBMEz-Y7p-w0qrPJVelx-nYQzbcnthqAqZuyw",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/security/oauth/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"security",
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
